@@ -1,18 +1,16 @@
-export const ADD_CHARACTER = "ADD_CHARACTER";
-export const REMOVE_HERO = "REMOVE_HERO";
+const ADD_CHARACTER = 'ADD_CHARACTER';
+const REMOVE_HERO = 'REMOVE_HERO';
 
-export function addCharacterById(id) {
-        const action = {
-            type : ADD_CHARACTER,
-            id
-        }
-    return action;
-}
+const addCharacterById = (id) => ({ ADD_CHARACTER, id });
 
-export function removeHeroById(id) {
-        const action = {
-            type : REMOVE_HERO,
-            id
-        }
-    return action;
-}
+const removeHeroById = (id) => ({
+  REMOVE_HERO,
+  id,
+});
+
+export default {
+  addCharacterById,
+  removeHeroById,
+  ADD_CHARACTER,
+  REMOVE_HERO,
+};

@@ -1,17 +1,15 @@
-import { ADD_CHARACTER, REMOVE_HERO } from '../actions';
+import actions from '../actions';
 import createCharacter from './helper';
 
-let heroes = (state = [], action) =>{
-    switch(action.type){
-        case ADD_CHARACTER:
-            let heroes = [...state, createCharacter(action.id)];
-            return heroes;
-        case REMOVE_HERO:
-            heroes = state.filter(heroes => heroes.id !== action.id);
-            return heroes;
-        default:
-            return state;
-    }
-}
+const heroes = (state = [], action) => {
+  switch (action.type) {
+    case actions.ADD_CHARACTER:
+      return [...state, createCharacter(action.id)];
+    case actions.REMOVE_HERO:
+      return state.filter((item) => item.id !== action.id);
+    default:
+      return state;
+  }
+};
 
 export default heroes;
