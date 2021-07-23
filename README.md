@@ -1,5 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+SuperSquad Maker
 
-Run below commands on terminal -
+Steps to run -
+
 - npm install
-- npm run 
+- npm start

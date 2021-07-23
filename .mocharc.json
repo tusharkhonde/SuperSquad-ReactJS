@@ -1,0 +1,6 @@
+{
+  "diff": true,
+  "fullTrace": true,
+  "spec": "src/__tests__/*.test.js",
+  "require": ["esm", "@babel/register"]
+}
